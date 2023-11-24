@@ -375,14 +375,14 @@ nav h1 span {
 
 #signIn-container .log-in {
   padding: 20px;
-  width: clamp(350px, 50vw, 500px);
+  width: clamp(350px, 50svw, 375px);
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  height: 80%;
+  height: 60%;
 }
 
 #img-container {
