@@ -1,5 +1,5 @@
 :root {
-  --main-color: rgb(255, 60, 0);
+  --main-clr: rgb(255, 60, 0);
 }
 
 * {
@@ -9,15 +9,19 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main-clr {
+  color: var(--main-clr);
+}
+
 /* Elements Selector */
 section {
   width: 100vw;
   height: 100vh;
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
   background-color: black;
-}
+} */
 
 /* NAVBAR */
 nav {
