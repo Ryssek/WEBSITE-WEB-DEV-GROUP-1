@@ -9,19 +9,39 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-clr {
   color: var(--main-clr);
+}
+
+.section-title {
+  font-size: 4rem;
+  color: var(--main-clr);
+}
+
+.desc-img {
+  width: 100%;
+}
+
+.sub-title {
+  margin-bottom: 20px;
+  font-size: 1.75rem;
 }
 
 /* Elements Selector */
 section {
   width: 100vw;
   height: 100vh;
+  padding: 20px;
+  scroll-margin-top: 6rem;
 }
 
-/* section:nth-child(even) {
-  background-color: black;
-} */
+section:nth-child(even) {
+  background-color: #ddd8d8;
+}
 
 /* NAVBAR */
 nav {
@@ -34,9 +54,11 @@ nav {
   /* height: 9vh; */
   overflow: hidden;
   flex: 1;
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;
+  opacity: 0.9;
+  z-index: 10;
 }
 
 nav ul {
@@ -73,12 +95,99 @@ nav h1 span {
 }
 
 /* Section: Home */
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+#home button {
+  padding: 16px 18px;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--main-clr);
+  color: white;
+  cursor: pointer;
+}
+
+#home button a {
+  text-decoration: none;
+  color: white;
+}
+
+#home h1 {
+  font-size: 10rem;
+}
+
 #home::before {
   content: '';
-  background: url(/img/header.jpg) no-repeat cover cover/center;
+  background: url(/img/header.jpg) no-repeat fixed center/cover;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: -10;
+  opacity: 0.7;
+}
+
+/* Section: What We Do */
+#what-we-do {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* justify-content: space-evenly; */
+}
+
+/* #what-we-do > div:first-child p {
+  text-align: justify;
+  line-height: 1.3rem;
+} */
+
+/* #what-we-do #desc {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+} */
+
+/* #what-we-do #desc div {
+  align-self: center;
+  justify-self: center;
+} */
+
+#what-we-do .container {
+  display: flex;
+  gap: 10%;
+  text-align: justify;
+  height: 85%;
+}
+
+#what-we-do .container > div {
+  flex: 1;
+  height: 100%;
+}
+
+#what-we-do .container > div:first-child p {
+  line-height: 1.3rem;
+}
+
+#what-we-do .container > div:first-child h2 {
+  margin: 10px 0;
+}
+
+#what-we-do .container > div:first-child {
+  overflow-y: scroll;
+}
+
+#what-we-do .container > div:first-child::-webkit-scrollbar {
+  display: none;
+}
+
+#what-we-do .container > div:first-child {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
