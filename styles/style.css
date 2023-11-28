@@ -9,6 +9,15 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.active {
+  color: whitesmoke;
+  background-color: black;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -37,10 +46,6 @@ section {
   height: 100vh;
   padding: 20px;
   scroll-margin-top: 6rem;
-}
-
-section:nth-child(even) {
-  background-color: #ddd8d8;
 }
 
 /* NAVBAR */
