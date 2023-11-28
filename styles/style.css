@@ -9,11 +9,6 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.active {
-  color: whitesmoke;
-  background-color: black;
-}
-
 body {
   background-color: #f4f4f4;
 }
@@ -48,6 +43,10 @@ section {
   scroll-margin-top: 6rem;
 }
 
+section:nth-child(even) {
+  background-color: #dfdfdf;
+}
+
 /* NAVBAR */
 nav {
   background-color: gray;
@@ -79,12 +78,12 @@ nav ul a {
   color: white;
   text-decoration: none;
   padding: 100% 25px;
-  transition: all 300ms;
+  transition: all 2ms;
 }
 
 nav ul a:hover {
   color: whitesmoke;
-  background-color: black;
+  background-color: var(--main-clr);
 }
 
 nav h1 {
@@ -97,6 +96,11 @@ nav h1 {
 
 nav h1 span {
   color: var(--main-color);
+}
+
+.active {
+  color: whitesmoke;
+  background-color: var(--main-clr);
 }
 
 /* Section: Home */
@@ -125,6 +129,7 @@ nav h1 span {
 
 #home h1 {
   font-size: 10rem;
+  color: black;
 }
 
 #home::before {
@@ -145,24 +150,7 @@ nav h1 span {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* justify-content: space-evenly; */
 }
-
-/* #what-we-do > div:first-child p {
-  text-align: justify;
-  line-height: 1.3rem;
-} */
-
-/* #what-we-do #desc {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-} */
-
-/* #what-we-do #desc div {
-  align-self: center;
-  justify-self: center;
-} */
 
 #what-we-do .container {
   display: flex;
