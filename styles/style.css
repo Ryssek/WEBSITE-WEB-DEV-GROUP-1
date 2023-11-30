@@ -240,6 +240,7 @@ nav h1 span {
   flex-direction: column;
   line-height: 2rem;
   width: 500px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
   background-color: white;
   /* flex: 1; */
 }
