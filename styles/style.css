@@ -57,7 +57,7 @@ html {
 section {
   width: 100vw;
   height: 100vh;
-  padding: 20px;
+  padding: 20px 50px;
   scroll-margin-top: 6rem;
 }
 
@@ -67,7 +67,7 @@ section:nth-child(even) {
 
 /* NAVBAR */
 nav {
-  background-color: gray;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -240,7 +240,7 @@ nav h1 span {
   flex-direction: column;
   line-height: 2rem;
   width: 500px;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
   background-color: white;
   /* flex: 1; */
 }
@@ -265,6 +265,7 @@ nav h1 span {
   color: white;
   font-size: 1rem;
   letter-spacing: 4px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .price-btn:hover {
