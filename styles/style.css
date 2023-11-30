@@ -24,6 +24,7 @@ html {
 .section-title {
   font-size: 4rem;
   color: var(--main-clr);
+  user-select: none;
 }
 
 .desc-img {
@@ -33,6 +34,23 @@ html {
 .sub-title {
   margin-bottom: 20px;
   font-size: 1.75rem;
+}
+
+.price-title {
+  font-size: 1.75rem;
+  color: var(--main-clr);
+  margin: 20px 0;
+}
+
+.price {
+  font-size: 3rem;
+  color: var(--main-clr);
+  margin: 20px 0;
+}
+
+.small-txt {
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
 
 /* Elements Selector */
@@ -73,6 +91,7 @@ nav ul {
 }
 
 nav ul a {
+  white-space: nowrap;
   font-weight: 650;
   font-size: 20px;
   color: white;
@@ -110,6 +129,7 @@ nav h1 span {
   justify-content: center;
   flex-flow: column wrap;
   gap: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
 }
 
 #home button {
@@ -129,7 +149,8 @@ nav h1 span {
 
 #home h1 {
   font-size: 10rem;
-  color: black;
+  color: white;
+  user-select: none;
 }
 
 #home::before {
@@ -141,7 +162,8 @@ nav h1 span {
   left: 0;
   bottom: 0;
   z-index: -10;
-  opacity: 0.7;
+  opacity: 0.8;
+  /* filter: brightness(50%); */
 }
 
 /* Section: What We Do */
@@ -150,13 +172,15 @@ nav h1 span {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  overflow: scroll;
 }
 
 #what-we-do .container {
   display: flex;
   gap: 10%;
   text-align: justify;
-  height: 85%;
+  height: 100%;
+  justify-self: center;
 }
 
 #what-we-do .container > div {
@@ -176,11 +200,70 @@ nav h1 span {
   overflow-y: scroll;
 }
 
-#what-we-do .container > div:first-child::-webkit-scrollbar {
+#what-we-do .container > div:first-child::-webkit-scrollbar,
+#subs-container > div::-webkit-scrollbar {
   display: none;
 }
 
-#what-we-do .container > div:first-child {
+#what-we-do .container > div:first-child,
+#subs-container > div {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+/* Pricing */
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 0; */
+}
+
+#subs-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 20px;
+  height: 100%;
+}
+
+#subs-container > div {
+  overflow-x: scroll;
+  text-align: center;
+  height: 80%;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  line-height: 2rem;
+  width: 500px;
+  background-color: white;
+  /* flex: 1; */
+}
+
+#subs-container > div ul {
+  text-align: left;
+}
+
+#free {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* height: 100%;
+  width: 100%; */
+}
+
+.price-footer {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#subs-container > div ul {
+  font-size: 1.2rem;
+  color: gray;
 }
