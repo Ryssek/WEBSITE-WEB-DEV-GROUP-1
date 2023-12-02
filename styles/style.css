@@ -63,7 +63,8 @@ section {
 }
 
 section:nth-child(even) {
-  background-color: #dfdfdf;
+  background-color: rgb(75, 75, 75);
+  color: white;
 }
 
 /* NAVBAR */
@@ -379,4 +380,66 @@ nav h1 span {
 .other-container a {
   font-size: 1.25rem;
   text-decoration: none;
+}
+
+/* Contact */
+
+#contact label {
+  display: block;
+  margin: 25px 0;
+  font-size: 1.5rem;
+  color: var(--main-clr);
+  font-weight: 700;
+}
+
+#contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+  margin: auto;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+#contact-container input,
+textarea {
+  width: 100%;
+  padding: 15px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#contact-container .container {
+  width: 100%;
+}
+
+#contact-container .container .name-container {
+  display: flex;
+  gap: 20px;
+}
+
+#contact-container .container .name-container > div {
+  flex: 1;
+}
+
+#contact-container .btn-container {
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+#contact-container .btn-container button {
+  padding: 20px 15px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: var(--main-clr);
+  color: white;
+  border: none;
+  border-radius: 20px;
 }
