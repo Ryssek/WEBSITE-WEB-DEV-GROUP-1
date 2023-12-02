@@ -158,7 +158,7 @@ nav h1 span {
 
 #home::before {
   content: "";
-  background: url(/img/header.jpg) no-repeat fixed center/cover;
+  background: url(img/header.jpg) no-repeat fixed center/cover;
   position: absolute;
   width: 100%;
   top: 0;
