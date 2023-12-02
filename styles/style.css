@@ -11,6 +11,7 @@
 
 body {
   background-color: #f4f4f4;
+  overflow-x: hidden;
 }
 
 html {
@@ -129,6 +130,7 @@ nav h1 span {
   justify-content: center;
   flex-flow: column wrap;
   gap: 20px;
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
 }
 
@@ -154,9 +156,10 @@ nav h1 span {
 }
 
 #home::before {
-  content: '';
+  content: "";
   background: url(/img/header.jpg) no-repeat fixed center/cover;
   position: absolute;
+  width: 100%;
   top: 0;
   right: 0;
   left: 0;
@@ -282,4 +285,95 @@ nav h1 span {
 #subs-container > div ul {
   font-size: 1.2rem;
   color: gray;
+}
+
+/* Sign In */
+
+#signin h2 {
+  text-align: center;
+}
+
+#signIn-container {
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: gray; */
+  height: 100%;
+}
+
+#signIn-container .log-in {
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: wheat;
+  height: 60vh;
+}
+
+#img-container {
+  height: 200px;
+}
+
+#signIn-container .log-in > div {
+  /* flex: 1; */
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#signIn-container .log-in .profile-img {
+  width: 200px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  position: absolute;
+  top: -10vh;
+}
+
+#inputs {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+#inputs input {
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid black;
+  font-size: 1.5rem;
+}
+
+#inputs label {
+  align-self: flex-start;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+#inputs button {
+  padding: 15px 10px;
+  margin-top: 5vh;
+  font-size: 1.4rem;
+  width: 200px;
+}
+
+.other-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+.other-container a {
+  font-size: 1.25rem;
+  text-decoration: none;
 }
