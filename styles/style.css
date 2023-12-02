@@ -308,8 +308,10 @@ nav h1 span {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: wheat;
-  height: 60vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  height: 80%;
 }
 
 #img-container {
@@ -326,11 +328,12 @@ nav h1 span {
 }
 
 #signIn-container .log-in .profile-img {
-  width: 200px;
+  width: 175px;
   border-radius: 50%;
   border: none;
   background-color: white;
   position: absolute;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
   top: -10vh;
 }
 
