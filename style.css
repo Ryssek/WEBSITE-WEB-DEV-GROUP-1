@@ -38,13 +38,13 @@ html {
 }
 
 .price-title {
-  font-size: 1.75rem;
+  font-size:  clamp(1.75rem, 3.5vw, 1.75rem);
   color: var(--main-clr);
   margin: 20px 0;
 }
 
 .price {
-  font-size: 3rem;
+  font-size: clamp(1rem, 3.5vw, 3rem);
   color: var(--main-clr);
   margin: 20px 0;
 }
@@ -56,8 +56,9 @@ html {
 
 /* Elements Selector */
 section {
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
+  min-height: 100svh;
   padding: 20px 50px;
   scroll-margin-top: 6rem;
 }
@@ -69,13 +70,13 @@ section:nth-child(even) {
 
 /* NAVBAR */
 nav {
+  gap: 1.2rem;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   padding: 20px 10px;
-  /* height: 9vh; */
   overflow: hidden;
   flex: 1;
   position: fixed;
@@ -95,10 +96,10 @@ nav ul {
 nav ul a {
   white-space: nowrap;
   font-weight: 650;
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 18px);
   color: white;
   text-decoration: none;
-  padding: 100% 25px;
+  padding: 100% 1.4em;
   transition: all 2ms;
 }
 
@@ -110,7 +111,7 @@ nav ul a:hover {
 nav h1 {
   margin-left: 20px;
   color: white;
-  font-size: 3rem;
+  font-size: clamp(1rem, 4vw, 3rem);
   cursor: default;
   user-select: none;
 }
@@ -151,7 +152,7 @@ nav h1 span {
 }
 
 #home h1 {
-  font-size: clamp(5rem, 2vw, 10rem);
+  font-size: clamp(4rem, 10vw, 10rem);
   color: white;
   user-select: none;
 }
@@ -236,22 +237,20 @@ nav h1 span {
 #subs-container > div {
   overflow-x: scroll;
   text-align: center;
-  height: 80%;
-  padding: 50px;
+  height: 500px;
+  padding: 2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   line-height: 2rem;
   width: 500px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
   background-color: white;
   /* flex: 1; */
 }
 
-#subs-container > div ul {
-  text-align: left;
-}
+
 
 #free {
   display: flex;
@@ -278,13 +277,16 @@ nav h1 span {
 }
 
 .price-footer {
-  font-size: 1rem;
+  text-align: center;
+  margin-top: 1em;
+  font-size: clamp(.9rem, 1vw, 1rem);
   font-style: italic;
   font-weight: bold;
 }
 
 #subs-container > div ul {
-  font-size: 1.2rem;
+  text-align: left;
+  font-size: clamp(0.8rem, 1.4vw, 1.2rem);
   color: gray;
 }
 
