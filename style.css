@@ -262,7 +262,6 @@ nav h1 span {
   height: 100%;
   /* background-color: red; */
   background: url(img/what-img.jpg) no-repeat fixed center/cover;
-  z-index: 0;
 }
 
 /* #what-we-do::before {
