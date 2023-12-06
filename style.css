@@ -18,6 +18,10 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  cursor: pointer;
+}
+
 .main-clr {
   color: var(--main-clr);
 }
@@ -153,18 +157,26 @@ nav h1 span {
   justify-content: center;
   flex-flow: column wrap;
   gap: 20px;
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
 }
 
 #home button {
   padding: 16px 18px;
   font-size: 1.3rem;
-  border: none;
+  border: 1px solid transparent;
   border-radius: 15px;
   background-color: var(--main-clr);
   color: white;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+#home button:hover {
+  background-color: rgb(248, 95, 48);
+}
+
+#home button:hover #home button a {
+  color: black;
 }
 
 #home button a {
@@ -200,6 +212,7 @@ nav h1 span {
   flex-direction: column;
   gap: 30px;
   overflow: scroll;
+  position: relative;
 }
 
 #what-we-do .container {
@@ -239,6 +252,30 @@ nav h1 span {
   scrollbar-width: none; /* Firefox */
 }
 
+.what-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  /* background-color: red; */
+  background: url(img/what-img.jpg) no-repeat fixed center/cover;
+  z-index: 0;
+}
+
+/* #what-we-do::before {
+  content: '';
+  background: url(img/what-img.jpg) no-repeat center center/cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -10;
+} */
+
 /* Pricing */
 #pricing {
   display: flex;
@@ -269,8 +306,16 @@ nav h1 span {
   flex-direction: column;
   line-height: 2rem;
   width: 500px;
+  border-radius: 17px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
   background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  #subs-container {
+    /* background-color: red; */
+    flex-direction: column;
+  }
 }
 
 #free {
