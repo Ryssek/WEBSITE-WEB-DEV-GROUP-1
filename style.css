@@ -264,17 +264,6 @@ nav h1 span {
   background: url(img/what-img.jpg) no-repeat fixed center/cover;
 }
 
-/* #what-we-do::before {
-  content: '';
-  background: url(img/what-img.jpg) no-repeat center center/cover;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  z-index: -10;
-} */
-
 /* Pricing */
 #pricing {
   display: flex;
