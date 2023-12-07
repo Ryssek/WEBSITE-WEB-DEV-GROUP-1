@@ -252,6 +252,15 @@ nav h1 span {
   scrollbar-width: none; /* Firefox */
 }
 
+#what-we-do #members ul {
+  margin-left: 20px;
+}
+
+#what-we-do #members li h2 {
+  margin: 14px 0;
+  /* font-size: clamp(1.5rem, 5vw, 1.8rem); */
+}
+
 .what-img {
   position: absolute;
   top: 0;
@@ -260,7 +269,6 @@ nav h1 span {
   bottom: 0;
   width: 50%;
   height: 100%;
-  /* background-color: red; */
   background: url(img/what-img.jpg) no-repeat fixed center/cover;
 }
 
