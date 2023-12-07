@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> CODESHED</title>
+    <title>CODESHED</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <nav>
       <h1>Code<span class="main-clr">SHED</span></h1>
       <ul>
@@ -120,13 +122,11 @@
               </ul>
             </div>
 
-            <div></div>
-
             <div>
-              <p class="price-footer">
+              <!-- <p class="price-footer">
                 Perfect for Coding enthusiasts who are just starting their
                 journey and want to explore the basics without any cost.
-              </p>
+              </p> -->
             </div>
             <button class="price-btn">BUY NOW!</button>
           </div>
@@ -134,7 +134,7 @@
             <div>
               <h3 class="price-title">Coder's Companion</h3>
               <h3 class="price">
-                &#8369;500/<span class="small-txt">month</span>
+                &#8369;499/<span class="small-txt">month</span>
               </h3>
             </div>
 
@@ -155,10 +155,10 @@
             </div>
 
             <div>
-              <p class="price-footer">
+              <!-- <p class="price-footer">
                 Perfect for Intermediate developers seeking a comprehensive
                 learning experience and personalized support.
-              </p>
+              </p> -->
             </div>
 
             <button class="price-btn">BUY NOW!</button>
@@ -193,11 +193,11 @@
             </div>
 
             <div>
-              <p class="price-footer">
+              <!-- <p class="price-footer">
                 Perfect for Seasoned developers looking for an immersive,
                 premium experience with personalized mentorship and advanced
                 resources.
-              </p>
+              </p> -->
             </div>
             <button class="price-btn">BUY NOW!</button>
           </div>
@@ -237,9 +237,9 @@
                 required
               />
               <div><button>SIGN IN</button></div>
-              <div class="other-container">
-                <a href="#">Forgot Password?</a>
-                <a href="#">SIGN UP</a>
+              <div id="other-container">
+                <a href="#signin">Forgot Password?</a>
+                <a href="#signin">SIGN UP</a>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
       <section id="contact">
         <h2 class="section-title">CONTACT</h2>
         <div id="contact-container">
-          <div>
+          <div class="contact-txt">
             <h2>Contact</h2>
             <p>Got some questions? We'll be happy to answer it!</p>
           </div>

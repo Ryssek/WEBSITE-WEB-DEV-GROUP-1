@@ -1,7 +1,9 @@
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('nav a');
+let mybutton = document.getElementById('myBtn');
 
 window.onscroll = () => {
+  scrollFunction();
   sections.forEach((sec) => {
     let top = window.scrollY;
     let offset = sec.offsetTop - 150;
@@ -18,3 +20,17 @@ window.onscroll = () => {
     }
   });
 };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = 'block';
+  } else {
+    mybutton.style.display = 'none';
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
