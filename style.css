@@ -171,8 +171,9 @@ nav h1 span {
   transition: all 0.3s;
 }
 
-#home button:hover {
-  background-color: rgb(248, 95, 48);
+button:hover {
+  background-color: rgb(226, 68, 20) !important;
+  color: white !important;
 }
 
 #home button:hover #home button a {
